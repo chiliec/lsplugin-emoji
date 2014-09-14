@@ -16,7 +16,7 @@ class PluginEmoji_ModuleText extends PluginEmoji_Inherit_ModuleText {
 	public function Emojify($sText) {
 		$sText = preg_replace(
 			'/:([-\w]+):/', 
-			'<span class="emoji"><img src="http://livestreet1.ru/plugins/emoji/templates/skin/default/img/$1.png" height="22" width="22"></span>',
+			'<span class="emoji"><img src="'.Plugin::GetTemplateWebPath().'img/$1.png" height="22" width="22"></span>',
 			$sText
 		);
 		return $sText;
