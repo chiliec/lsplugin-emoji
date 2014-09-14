@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+    <name>
+        <lang name="default">Emoji</lang>
+        <lang name="russian">Emoji</lang>
+    </name>
+    <author>
+        <lang name="default">Chiliec</lang>
+        <lang name="russian">Chiliec</lang>
+    </author>
+    <homepage>http://livestreet.net</homepage>
+    <version>1.0.0</version>
+    <requires>
+        <livestreet>1.0.3</livestreet>
+        <plugins>
+        </plugins>
+    </requires>
+    <description>
+        <lang name="default">Emoji</lang>
+        <lang name="russian">Добавляет Emoji</lang>
+    </description>
+</plugin>
