@@ -16,13 +16,13 @@
   width:20px;
 }
 
-.markItUp .dummy a { background-image: url(../img/wysiwyg-emoji.png); background-position: -180px -80px;}
+.markItUp .dummy a { background-image: url(../images/wysiwyg-emoji.png); background-position: -180px -80px;}
 
-.markItUp .emoji-people > a { background-image:url(../img/wysiwyg-toolbar.png); background-position: -272px 0; }
-.markItUp .emoji-nature > a { background-image:url(../img/wysiwyg-toolbar.png); background-position: -288px 0; }
-.markItUp .emoji-objects > a  { background-image:url(../img/wysiwyg-toolbar.png); background-position: -304px 0; }
-.markItUp .emoji-places > a  { background-image:url(../img/wysiwyg-toolbar.png); background-position: -320px 0; }
-.markItUp .emoji-symbols > a { background-image:url(../img/wysiwyg-toolbar.png); background-position: -336px 0; }
+.markItUp .emoji-people > a { background-image:url(../images/wysiwyg-toolbar.png); background-position: -272px 0; }
+.markItUp .emoji-nature > a { background-image:url(../images/wysiwyg-toolbar.png); background-position: -288px 0; }
+.markItUp .emoji-objects > a  { background-image:url(../images/wysiwyg-toolbar.png); background-position: -304px 0; }
+.markItUp .emoji-places > a  { background-image:url(../images/wysiwyg-toolbar.png); background-position: -320px 0; }
+.markItUp .emoji-symbols > a { background-image:url(../images/wysiwyg-toolbar.png); background-position: -336px 0; }
 
 .markItUp .emoji-people ul,
 .markItUp .emoji-nature ul,
@@ -50,7 +50,7 @@
 /* Second-level menu */
 .markItUp ul li ul { position: absolute; z-index: 10; display: none; margin: 0 0 0 -11px; padding: 6px; width: 260px; border: 1px solid #ccc; background: rgba(255, 255, 255, .75); }
 .markItUp ul li ul li { padding: 3px; }
-.markItUp ul li ul li a { width: 20px; height: 20px; background-image: url(../img/wysiwyg-emoji.png); background-position: 0 0; background-repeat: no-repeat; }
+.markItUp ul li ul li a { width: 20px; height: 20px; background-image: url(../images/wysiwyg-emoji.png); background-position: 0 0; background-repeat: no-repeat; }
 
 /* People */
 .markItUp .markItUpButton19-1 a { background-position: 0 0; }
