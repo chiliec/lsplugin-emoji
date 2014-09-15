@@ -1,13 +1,19 @@
 /*
 * @Module Name: Emoji
 * @Description: Emoji for LiveStreet
-* @Version: 1.0
+* @Version: 2.0
 * @Author: Chiliec
 */
 
 /*Хак для темы synio*/
 #wrapper {
     overflow: visible !important;
+}
+
+/*Размер смайликов*/
+.emojione {
+  height:20px;
+  width:20px;
 }
 
 .markItUp .dummy a { background-image: url(../img/wysiwyg-emoji.png); background-position: -180px -80px;}

@@ -1,16 +1,13 @@
 <?php
 /**
- * Конфиг
- */
-
+* @Module Name: Emoji
+* @Description: Emoji for LiveStreet
+* @Version: 2.0
+* @Author: Chiliec
+*/
 $config = array();
 
-// Переопределить имеющуюся переменную в конфиге:
-// Переопределение роутера на наш новый Action - добавляем свой урл  http://domain.com/emoji
-// Config::Set('router.page.emoji', 'PluginEmoji_ActionEmoji');
-
-// Добавить новую переменную:
-// $config['per_page'] = 15;
-// Эта переменная будет доступна в плагине как Config::Get('plugin.emoji.per_page')
+$config['use_ascii'] = false; // Использование обычных смайлов, вроде :-), :D и т. д.
+$config['use_cdn'] = false; // Включение этой опции позволяет снизить нагрузку на сервер
 
 return $config;

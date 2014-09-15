@@ -2,7 +2,7 @@
 /*
 * @Module Name: Emoji
 * @Description: Emoji for LiveStreet
-* @Version: 1.0
+* @Version: 2.0
 * @Author: Chiliec
 */
 class PluginEmoji_ModuleText extends PluginEmoji_Inherit_ModuleText {
@@ -13,12 +13,12 @@ class PluginEmoji_ModuleText extends PluginEmoji_Inherit_ModuleText {
 		return $sResult;
 	}
 
-	public function Emojify($sText) {
-		$sText = preg_replace(
-			'/:([-\w]+):/', 
-			'<span class="emoji"><img src="'.Plugin::GetTemplateWebPath(__CLASS__).'img/$1.png" height="22" width="22"></span>',
-			$sText
-		);
+	public function Emojify($sText) {	
+		Emojione::$ascii = Config::Get('plugin.emoji.use_ascii');
+		if(!Config::Get('plugin.emoji.use_cdn')) {
+			Emojione::$imagePathPNG = Plugin::GetTemplateWebPath(__CLASS__).'images/';
+		}		
+		$sText =  Emojione::toImage($sText);
 		return $sText;
 	}
 }
