@@ -5,9 +5,9 @@
 * @Author: Chiliec
 */
 
-/*Хак для темы synio*/
+/*Хак избавляющий от сокрытия смайлов под футером*/
 #wrapper {
-    overflow: visible !important;
+    padding-bottom: 220px;
 }
 
 /*Размер смайликов*/
