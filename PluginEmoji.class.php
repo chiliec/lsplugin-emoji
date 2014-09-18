@@ -25,6 +25,10 @@ class PluginEmoji extends Plugin {
 	}
 
 	public function Init() {
+		Emojione::$ascii = Config::Get('plugin.emoji.use_ascii');
+		if(!Config::Get('plugin.emoji.use_cdn')) {
+			Emojione::$imagePathPNG = Plugin::GetTemplateWebPath(__CLASS__).'images/';
+		}		
 		$this->Viewer_AppendStyle(Plugin::GetTemplatePath(__CLASS__)."css/style.css");
 		$this->Viewer_AppendScript(Plugin::GetTemplatePath(__CLASS__)."js/emo.js");
 	}
