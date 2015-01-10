@@ -860,17 +860,19 @@ var myMarkupSet =
 
 ]
 
-var newMarkitupSettings = ls.settings.getMarkitup();
-var newMarkitupSettingsComment = ls.settings.getMarkitupComment();
+var newMarkitupSettings = ls.settings.getMarkitup;
+var newMarkitupSettingsComment = ls.settings.getMarkitupComment;
 
 ls.settings.getMarkitup = function() {
+    newMarkitupSettings = newMarkitupSettings.call(ls.settings); // Вызываем в контексте ls.settings для совместимости с Alto CMS
     newMarkitupSettings.markupSet = newMarkitupSettings.markupSet.concat(myMarkupSet);
     return newMarkitupSettings;
 }
 
 ls.settings.getMarkitupComment = function() {
-	newMarkitupSettingsComment.markupSet = newMarkitupSettingsComment.markupSet.concat(myMarkupSet);
-	return newMarkitupSettingsComment;
+    newMarkitupSettingsComment = newMarkitupSettings.call(ls.settings); // Вызываем в контексте ls.settings для совместимости с Alto CMS
+    newMarkitupSettingsComment.markupSet = newMarkitupSettingsComment.markupSet.concat(myMarkupSet);
+    return newMarkitupSettingsComment;
 }
 
 if(ls.forum !== undefined) {
